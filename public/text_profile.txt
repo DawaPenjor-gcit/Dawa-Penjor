@@ -1,0 +1,2 @@
+# ImageMagick pixel enumeration: 1,1,255,gray
+0,0: (21.4008,21.4008,21.4008)  #151515  gray(8.39246%)

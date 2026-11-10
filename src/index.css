@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-dzongkha {
+    font-family: 'Noto Serif Tibetan', serif;
+  }
+}
+
+/* Ensure clean print layout */
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header,
+  section:first-of-type,
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  #certificate-print-area {
+    box-shadow: none !important;
+    border: none !important;
+    transform: none !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    page-break-inside: avoid;
+  }
+}
+
+/* When generating PDF, hide all interactive hints and guides */
+.is-exporting-pdf [title] {
+  outline: none !important;
+}
+
+.is-exporting-pdf .is-exporting-hide {
+  display: none !important;
+}

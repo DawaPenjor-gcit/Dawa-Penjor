@@ -1,0 +1,6 @@
+{
+  "name": "CertiCraft Bhutan Election Certificate Generator",
+  "description": "Official Certificate of Election generator for Bhutan Election Commission, featuring live customizable bold fields, high-fidelity PDF export, and verified Dzongkha typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
